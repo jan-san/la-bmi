@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latitude-adjusted Body Mass Index (LA-BMI) Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Latitude-adjusted Body Mass Index (LA-BMI) Calculator">
+  <meta name="author" content="Jan Hagelauer">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Latitude-adjusted Body Mass Index (LA-BMI) Calculator</h1>
+    <h2></h2>
+    <p>Jan Hagelauer<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Motivation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>John D. is travelling to Tromsø (N69.648787, E18.954408). According to the scale in the hotel, he weighs 80.9 kg. At 1,80m, this leaves him with a BMI of 24.97. John is very happy finally having achieved normal weight and decides to go feasting tonight.</p>
+
+<p><strong>What John doesn&#39;t know:</strong> the scale he used is adjusted for standard gravity. His actual weight is 81.06 kg, and his actual BMI 25.02, meaning that he is still overweight.</p>
+
+<p><strong>The latitude-adjusted Body Mass Index calculator can help avoid unfounded feasting!</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why latitude-adjustment is necessary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Gravity</strong> is not the constant across the globe. The two main factors influencing local gravity are:</p>
+
+<ul>
+<li>variation in the <em>centrifugal force</em> resulting from the earth&#39;s rotation </li>
+<li>the <em>equatorial bulge</em> (the earth&#39;s greater diameter at the equator compared to the poles)</li>
+</ul>
+
+<p>These two factors are dependent on the location&#39;s <em>latitude</em> and can result in deviations of the local gravity from the standard gravity of up to 0.5%.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Gravity and weight</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Electronic scales measure the <strong>force</strong> applied by the measured object to the scale&#39;s surface.
+This force (\(F\)) is directly proportional to the object&#39;s mass (\(m\)) and the local gravity (\(g\)):</p>
+
+<p>\(F = m \cdot g\)</p>
+
+<p>The variability of local gravity on earth therefore results in a measurement error of electronic scales.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Completely unrelated plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The following plot was merely put into this presentation to fully comply with Coursera&#39;s grading requirements.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Motivation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Why latitude-adjustment is necessary'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Gravity and weight'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Completely unrelated plot'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

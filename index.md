@@ -14,13 +14,28 @@ knit        : slidify::knit2slides
 
 ## Motivation
 
-John D. is travelling to Tromsø (N69.648787, E18.954408). According to the scale in the hotel, he weighs 80.9 kg. At 1,80m, this leaves him with a BMI of 24.97. John is very happy finally having achieved normal weight and decides to go feasting tonight.
+<style type="text/css">
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic
+}
+</style>
+
+John D. is travelling to Tromsø (N69.648787, E18.954408). According to the scale in the hotel, he weighs 80.9 kg. At 1,80m, this leaves him with a BMI$^1$ of 24.97. John is very happy finally having achieved normal weight and decides to go feasting tonight.
 
 **What John doesn't know:** the scale he used is adjusted for standard gravity. His actual weight is 81.06 kg, and his actual BMI 25.02, meaning that he is still overweight.
 
 **The latitude-adjusted Body Mass Index calculator can help avoid unfounded feasting!**
 
---- .class #id 
+
+
+
+$^1$: The BMI has been criticized by various scientists for not being effective in determining a person's over- or underweight. While grading this assignment, please assume that this criticizm was unfounded and based only on the scientists' unhappyness with their own BMI results.
+
+
+--- 
 
 ## Why latitude-adjustment is necessary
 
@@ -28,9 +43,9 @@ John D. is travelling to Tromsø (N69.648787, E18.954408). According to the scal
 - variation in the *centrifugal force* resulting from the earth's rotation 
 - the *equatorial bulge* (the earth's greater diameter at the equator compared to the poles)
 
-These two factors are dependent on the location's *latitude* and can result in deviations of the local gravity from the standard gravity of up to 0.5%.
+These two factors are dependent on the location's *latitude* and can result in deviations of the local gravity from the standard gravity of up to 0.3%.
 
---- .class #id 
+--- 
 
 ## Gravity and weight
 
@@ -41,7 +56,7 @@ $F = m \cdot g$
 
 The variability of local gravity on earth therefore results in a measurement error of electronic scales.
 
---- .class #id 
+--- 
 
 ## Completely unrelated plot
 
